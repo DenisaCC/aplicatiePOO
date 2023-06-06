@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FADC2875-C2BB-4040-9528-EA2D025EFD20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>POO</RootNamespace>
+    <AssemblyName>POO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aeroportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aeroportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Conectare.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZboruri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZboruri.Designer.cs">
+      <DependentUpon>FormZboruri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAfisarePasageri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfisarePasageri.Designer.cs">
+      <DependentUpon>FrmAfisarePasageri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAfisarePersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfisarePersonal.Designer.cs">
+      <DependentUpon>FrmAfisarePersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAfisareServicii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfisareServicii.Designer.cs">
+      <DependentUpon>FrmAfisareServicii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAfisareZboruriPlecari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfisareZboruriPlecari.Designer.cs">
+      <DependentUpon>FrmAfisareZboruriPlecari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAfisareZboruriSosiri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfisareZboruriSosiri.Designer.cs">
+      <DependentUpon>FrmAfisareZboruriSosiri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InregistrareUtilizatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InregistrareUtilizatori.Designer.cs">
+      <DependentUpon>InregistrareUtilizatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pasageri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pasageri.Designer.cs">
+      <DependentUpon>Pasageri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal.Designer.cs">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicii.Designer.cs">
+      <DependentUpon>Servicii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilizator.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZboruri.resx">
+      <DependentUpon>FormZboruri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAfisarePasageri.resx">
+      <DependentUpon>FrmAfisarePasageri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAfisarePersonal.resx">
+      <DependentUpon>FrmAfisarePersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAfisareServicii.resx">
+      <DependentUpon>FrmAfisareServicii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAfisareZboruriPlecari.resx">
+      <DependentUpon>FrmAfisareZboruriPlecari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAfisareZboruriSosiri.resx">
+      <DependentUpon>FrmAfisareZboruriSosiri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InregistrareUtilizatori.resx">
+      <DependentUpon>InregistrareUtilizatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pasageri.resx">
+      <DependentUpon>Pasageri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal.resx">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Servicii.resx">
+      <DependentUpon>Servicii.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="aeroportDataSet.xsc">
+      <DependentUpon>aeroportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="aeroportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aeroportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aeroportDataSet.xss">
+      <DependentUpon>aeroportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
